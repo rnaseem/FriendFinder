@@ -9,10 +9,10 @@ var PORT = process.env.PORT || 3000;
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(express.static(__dirname + "/app/css"));
-app.use(favicon(path.join(__dirname, "/app/public/my_ir_favicon.png")));
 
-require("./app/routing/htmlRoutes")(app);
-require("./app/routing/apiRoutes")(app);
+
+require("./app/routing/htmlRoutes.js")(app);
+require("./app/routing/apiRoutes.js")(app);
 
 
 app.listen(PORT, function () {
