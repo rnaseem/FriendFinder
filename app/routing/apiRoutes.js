@@ -1,5 +1,4 @@
-var app = require("express");
-
+// Composed funcitons used for backend logic
 
 function friendFinder(latestProfile) {
    var store = [];
@@ -27,10 +26,6 @@ function friendFinder(latestProfile) {
    }
    console.log(store3);
 }
-
-// friendFinder(latestProfile.scores);
-
-/////////////////////////////////////////////////////////////////
 
 module.exports = function (app) {
    app.get("/api/friends", function (req, res) {
