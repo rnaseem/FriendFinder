@@ -11,127 +11,130 @@
 </head>
 
 <body>
-    <div class="container">
+    <div class="container-fluid">
         <div class="row">
             <div class="col-12">
-                <div class="jumbotron">
-                    <h1>Find Your Friend Survey</h1>
-
+                <div class="jumbotron text-center">
+                    <h1 class="bg-secondary p-4 border rounded">Find Your Pals</h1>
                 </div>
-                <form class="p-3">
-                    <div class="form-group">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" />
-                    </div>
+                <div class="row">
+                    <div class="col">
+                        <form class="p-3 bg-secondary">
+                            <div class="border rounded form-group bg-light p-4">
+                                <label class="p-2 lead border rounded" for="name">Enter that name!</label>
+                                <input class="p-2" type="text" id="name" />
+                            </div>
 
-                    <div class="form-group">
-                        <h5>Do you look after others more then you look after yourself?.</h5>
-                        <select name="q1">
-                            <option value="1">1 (Strongly Disagree)</option>
-                            <option value="2">2</option>
-                            <option value="3">3 (Neutral)</option>
-                            <option value="4">4</option>
-                            <option value="5">5 (Strongly Agree)</option>
-                        </select>
+                            <div class="form-group">
+                                <h5>Do you look after others more then you look after yourself?.</h5>
+                                <select name="q1">
+                                    <option value="1">1 (Strongly Disagree)</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3 (Neutral)</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5 (Strongly Agree)</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <h5>Pizza is your favorite food.</h5>
+                                <select name="q2">
+                                    <option value="1">1 (Strongly Disagree)</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3 (Neutral)</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5 (Strongly Agree)</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <h5>Football is the best sport.</h5>
+                                <select name="q3">
+                                    <option value="1">1 (Strongly Disagree)</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3 (Neutral)</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5 (Strongly Agree)</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <h5>Basketball is better then football.</h5>
+                                <select name="q4">
+                                    <option value="1">1 (Strongly Disagree)</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3 (Neutral)</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5 (Strongly Agree)</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <h5>
+                                    Lebron James is the greatest of all time!
+                                </h5>
+                                <select name="q5">
+                                    <option value="1">1 (Strongly Disagree)</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3 (Neutral)</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5 (Strongly Agree)</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <h5>
+                                    Care less about sports.
+                                </h5>
+                                <select name="q6">
+                                    <option value="1">1 (Strongly Disagree)</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3 (Neutral)</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5 (Strongly Agree)</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <h5>
+                                    The weekends are for parties
+                                </h5>
+                                <select name="q7">
+                                    <option value="1">1 (Strongly Disagree)</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3 (Neutral)</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5 (Strongly Agree)</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <h5>People are always kind</h5>
+                                <select name="q8">
+                                    <option value="1">1 (Strongly Disagree)</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3 (Neutral)</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5 (Strongly Agree)</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <h5>Religion is important to you.</h5>
+                                <select name="q9">
+                                    <option value="1">1 (Strongly Disagree)</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3 (Neutral)</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5 (Strongly Agree)</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <h5>Believe in equality</h5>
+                                <select name="q10">
+                                    <option value="1">1 (Strongly Disagree)</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3 (Neutral)</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5 (Strongly Agree)</option>
+                                </select>
+                            </div>
+                            <input class="btn btn-warning   " type="submit" id="submit" value="Get Match" />
+                        </form>
                     </div>
-                    <div class="form-group">
-                        <h5>Pizza is your favorite food.</h5>
-                        <select name="q2">
-                            <option value="1">1 (Strongly Disagree)</option>
-                            <option value="2">2</option>
-                            <option value="3">3 (Neutral)</option>
-                            <option value="4">4</option>
-                            <option value="5">5 (Strongly Agree)</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <h5>Football is the best sport.</h5>
-                        <select name="q3">
-                            <option value="1">1 (Strongly Disagree)</option>
-                            <option value="2">2</option>
-                            <option value="3">3 (Neutral)</option>
-                            <option value="4">4</option>
-                            <option value="5">5 (Strongly Agree)</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <h5>Basketball is better then football.</h5>
-                        <select name="q4">
-                            <option value="1">1 (Strongly Disagree)</option>
-                            <option value="2">2</option>
-                            <option value="3">3 (Neutral)</option>
-                            <option value="4">4</option>
-                            <option value="5">5 (Strongly Agree)</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <h5>
-                            Lebron James is the greatest of all time!
-                        </h5>
-                        <select name="q5">
-                            <option value="1">1 (Strongly Disagree)</option>
-                            <option value="2">2</option>
-                            <option value="3">3 (Neutral)</option>
-                            <option value="4">4</option>
-                            <option value="5">5 (Strongly Agree)</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <h5>
-                            Care less about sports.
-                        </h5>
-                        <select name="q6">
-                            <option value="1">1 (Strongly Disagree)</option>
-                            <option value="2">2</option>
-                            <option value="3">3 (Neutral)</option>
-                            <option value="4">4</option>
-                            <option value="5">5 (Strongly Agree)</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <h5>
-                            The weekends are for parties
-                        </h5>
-                        <select name="q7">
-                            <option value="1">1 (Strongly Disagree)</option>
-                            <option value="2">2</option>
-                            <option value="3">3 (Neutral)</option>
-                            <option value="4">4</option>
-                            <option value="5">5 (Strongly Agree)</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <h5>People are always kind</h5>
-                        <select name="q8">
-                            <option value="1">1 (Strongly Disagree)</option>
-                            <option value="2">2</option>
-                            <option value="3">3 (Neutral)</option>
-                            <option value="4">4</option>
-                            <option value="5">5 (Strongly Agree)</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <h5>Religion is important to you.</h5>
-                        <select name="q9">
-                            <option value="1">1 (Strongly Disagree)</option>
-                            <option value="2">2</option>
-                            <option value="3">3 (Neutral)</option>
-                            <option value="4">4</option>
-                            <option value="5">5 (Strongly Agree)</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <h5>Believe in equality</h5>
-                        <select name="q10">
-                            <option value="1">1 (Strongly Disagree)</option>
-                            <option value="2">2</option>
-                            <option value="3">3 (Neutral)</option>
-                            <option value="4">4</option>
-                            <option value="5">5 (Strongly Agree)</option>
-                        </select>
-                    </div>
-                    <input class="btn btn-primary" type="submit" id="submit" value="Get Match" />
-                </form>
+                </div>
             </div>
         </div>
     </div>
