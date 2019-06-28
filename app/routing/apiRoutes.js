@@ -1,4 +1,4 @@
-var express = require("express");
+var app = require("express");
 
 
 function friendFinder(latestProfile) {
@@ -28,19 +28,20 @@ function friendFinder(latestProfile) {
    console.log(store3);
 }
 
-friendFinder(latestProfile.scores);
+// friendFinder(latestProfile.scores);
 
 /////////////////////////////////////////////////////////////////
 
-app.get("/api/friends", function (req, res) {
-   return res.json(profiles);
-});
+module.exports = function (app) {
+   app.get("/api/friends", function (req, res) {
+      return res.json(profiles);
+   });
 
-app.post("/api/friends", function (req, res) {
-   var profile = req.body;
+   app.post("/api/friends", function (req, res) {
+      var profile = req.body;
 
-   profiles.push(profile);
-   res.json(profile);
-});
+      profiles.push(profile);
+      res.json(profile);
+   });
+}
 
-module.exports = router;
